@@ -14,10 +14,12 @@ static int globalTimer;
 static bool cartridge_removed = false;
 static bool juulActivated = false;
 
+
+
 void setup() {
   // put your setup code here, to run once:
   SerialBT.begin("MyJuul");
-  Serial1.begin(57600, SERIAL_8N1, 26, 25);
+  Serial1.begin(115200, SERIAL_8N1,16,17);
 }
 
 
@@ -50,7 +52,7 @@ void loop() {
            SerialBT.println(num_hits);
            break;
         default: 
-           SerialBT.println("JUUL: Excessive Amount of Bytes Sent");
+           SerialBT.println("JUUL: Exces           sive Amount of Bytes Sent");
       }
       SerialBT.print("NumBytes: ");
       SerialBT.print(numBytes);
@@ -64,6 +66,14 @@ void loop() {
     juulActivated = true; 
     globalTimer = millis();
     numBytes++;
-    Serial1.read();
+    SerialBT.print(char(Serial1.read()));
+      
   }
+  int value = analogRead(2);
+  if (value < 4000) {
+    SerialBT.println("USER EVENT");
+  }
+  SerialBT.println(value);
+
+  delay(100);
 }
