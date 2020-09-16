@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ay-gd-SVk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vVg-hY-viW">
+            <objects>
+                <viewController id="8ay-gd-SVk" customClass="ViewController" customModule="Juul_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HIi-Ob-8l9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cartridge Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5c-38-ELi">
+                                <rect key="frame" x="118" y="184" width="170" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hits:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBS-b0-opx">
+                                <rect key="frame" x="118" y="319" width="181" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2v-9D-EHm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juul Hit Monitor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTw-VX-MXI">
+                                        <rect key="frame" x="0.0" y="40" width="414" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BTw-VX-MXI" secondAttribute="trailing" id="9tu-26-gMl"/>
+                                    <constraint firstAttribute="height" constant="90" id="Bra-Ap-sLX"/>
+                                    <constraint firstItem="BTw-VX-MXI" firstAttribute="top" secondItem="b2v-9D-EHm" secondAttribute="top" constant="40" id="OO3-sj-Urv"/>
+                                    <constraint firstItem="BTw-VX-MXI" firstAttribute="leading" secondItem="b2v-9D-EHm" secondAttribute="leading" id="ifN-R8-a8z"/>
+                                    <constraint firstAttribute="bottom" secondItem="BTw-VX-MXI" secondAttribute="bottom" id="kXZ-U7-fq2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Double Taps:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ai6-sA-EdH">
+                                <rect key="frame" x="118" y="255" width="181" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b2v-9D-EHm" firstAttribute="top" secondItem="HIi-Ob-8l9" secondAttribute="top" id="4hl-Xl-VeP"/>
+                            <constraint firstItem="b2v-9D-EHm" firstAttribute="leading" secondItem="Rmj-dL-WgD" secondAttribute="leading" id="bdG-ac-nh8"/>
+                            <constraint firstItem="b2v-9D-EHm" firstAttribute="trailing" secondItem="Rmj-dL-WgD" secondAttribute="trailing" id="jF4-Tq-uqj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rmj-dL-WgD"/>
+                    </view>
+                    <connections>
+                        <outlet property="cartridgeStatusLabel" destination="Q5c-38-ELi" id="fsE-Nq-q6L"/>
+                        <outlet property="doubleTapCountLabel" destination="ai6-sA-EdH" id="nQm-zd-vdg"/>
+                        <outlet property="hitCountLabel" destination="zBS-b0-opx" id="iLe-S6-zF7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZy-mf-EKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143.47826086956522" y="45.535714285714285"/>
+        </scene>
+    </scenes>
+</document>

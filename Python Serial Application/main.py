@@ -8,7 +8,7 @@ from firebase_admin import credentials, firestore
 import google
 
 fbase_id = "u1"
-cred = credentials.Certificate("../JuulServiceAccountKey.json") # IMPORTANT, relative to where main.py is compiled
+cred = credentials.Certificate("../Private/JuulServiceAccountKey.json") # IMPORTANT, relative to where main.py is compiled
 default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 doc_ref = db.collection('users').document(fbase_id)
