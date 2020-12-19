@@ -1,4 +1,4 @@
-During the COVID summer, I assembled a team of engineer friends to develop a Bluetooth connected device and mobile app for decoding signals from a Juul in order to provide user feedback on inhale patterns. Proof of concept successfully built. Currentlyevaluating commercial viability.
+During the COVID summer, I assembled a team of engineer friends to develop a Bluetooth connected device and mobile app for decoding signals from a Juul in order to provide user feedback on inhale patterns. Proof of concept successfully built. Currently evaluating commercial viability.
 
 Demo Videos: bit.ly/Nicotine-Tracker-Demo
 
